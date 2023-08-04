@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.hubbard.appointmentapp.controller.MainController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
-
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hubbard.appointmentapp.controller.MainController">
+  <children>
+    <Label layoutX="14.0" layoutY="14.0" text="User ID: " />
+    <Label fx:id="idLabel" layoutX="59.0" layoutY="14.0" text="000">
+      <font>
+        <Font name="System Italic" size="12.0" />
+      </font></Label>
+    <Button layoutX="310.0" layoutY="231.0" mnemonicParsing="false" onAction="#exitButtonPressed" text="Exit" />
+    <Button layoutX="108.0" layoutY="61.0" mnemonicParsing="false" onAction="#apptButtonPressed" prefHeight="52.0" prefWidth="145.0" text="Manage Appointments" />
+    <Button layoutX="108.0" layoutY="135.0" mnemonicParsing="false" onAction="#custButtonPressed" prefHeight="52.0" prefWidth="145.0" text="Manage Customers" />
+    <Label fx:id="notifyLabel" alignment="CENTER" layoutX="140.0" layoutY="1.0" prefHeight="44.0" prefWidth="206.0" text="Appointment ID: 5 Starts in 5 minutes!" textAlignment="CENTER">
+      <font>
+        <Font name="System Italic" size="12.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
