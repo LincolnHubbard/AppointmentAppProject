@@ -1,6 +1,7 @@
 package com.hubbard.appointmentapp;
 
 import com.hubbard.appointmentapp.utility.JDBC;
+import com.hubbard.appointmentapp.utility.TimeManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

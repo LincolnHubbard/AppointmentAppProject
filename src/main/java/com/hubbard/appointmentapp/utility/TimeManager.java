@@ -1,5 +1,6 @@
 package com.hubbard.appointmentapp.utility;
 
+import com.hubbard.appointmentapp.dao.AppointmentDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
