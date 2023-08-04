@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hubbard.appointmentapp.controller.AppointmentViewController">
+    <children>
+        <TableView fx:id="apptTableView" layoutX="38.0" layoutY="30.0" prefHeight="200.0" prefWidth="1025.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="43.0" text="ID" />
+                <TableColumn fx:id="titleColumn" prefWidth="131.0" text="Title" />
+                <TableColumn fx:id="descColumn" prefWidth="159.0" text="Description" />
+                <TableColumn fx:id="locColumn" prefWidth="93.0" text="Location" />
+                <TableColumn fx:id="contactColumn" prefWidth="108.0" text="Contact" />
+                <TableColumn fx:id="typeColumn" prefWidth="105.0" text="Type" />
+                <TableColumn fx:id="startColumn" prefWidth="105.0" text="Start Time" />
+                <TableColumn fx:id="endColumn" prefWidth="105.0" text="End Time" />
+                <TableColumn fx:id="custIdColumn" prefWidth="105.0" text="Customer ID" />
+                <TableColumn fx:id="userIdColumn" prefWidth="69.0" text="User ID" />
+            </columns>
+        </TableView>
+        <Button layoutX="36.0" layoutY="243.0" mnemonicParsing="false" onAction="#addButtonPressed" text="Add" />
+        <Button layoutX="88.0" layoutY="243.0" mnemonicParsing="false" onAction="#updateButtonPressed" text="Update" />
+        <Button layoutX="156.0" layoutY="243.0" mnemonicParsing="false" onAction="#deleteButtonPressed" text="Delete" />
+        <Button fx:id="cancelButton" layoutX="1018.0" layoutY="243.0" mnemonicParsing="false" onAction="#cancelButtonPressed" text="Close" />
+        <Label layoutX="495.0" layoutY="6.0" text="View Appointments">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="allRadioButton" layoutX="600.0" layoutY="235.0" mnemonicParsing="false" onAction="#allSelected" selected="true" text="All Appointments">
+            <toggleGroup>
+                <ToggleGroup fx:id="filterVIew" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="monthRadioButton" layoutX="726.0" layoutY="235.0" mnemonicParsing="false" onAction="#monthSelected" text="This Month" toggleGroup="$filterVIew" />
+        <RadioButton fx:id="weekRadioButton" layoutX="824.0" layoutY="235.0" mnemonicParsing="false" onAction="#weekSelected" text="This Week" toggleGroup="$filterVIew" />
+        <Label layoutX="519.0" layoutY="235.0" text="Filter View:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="532.0" layoutY="268.0" text="Reports: ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="600.0" layoutY="264.0" mnemonicParsing="false" onAction="#contactViewPressed" text="Contact Schedule" />
+        <Button layoutX="726.0" layoutY="264.0" mnemonicParsing="false" onAction="#apptStatsPressed" text="Appointment Stats" />
+        <Label layoutX="600.0" layoutY="302.0" text="Appointments Left Today:" />
+        <Label fx:id="apptRemainingLabel" layoutX="743.0" layoutY="302.0" text="0" />
+    </children>
+</AnchorPane>

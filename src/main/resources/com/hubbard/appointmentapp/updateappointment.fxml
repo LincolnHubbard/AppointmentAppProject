@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="419.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hubbard.appointmentapp.controller.UpdateAppointmentController">
+    <TextField fx:id="idField" disable="true" editable="false" layoutX="140.0" layoutY="42.0" promptText="ID Is Auto-Generated" />
+    <TextField fx:id="titleField" layoutX="140.0" layoutY="77.0" promptText="Title" />
+    <TextArea fx:id="descField" layoutX="140.0" layoutY="113.0" prefHeight="76.0" prefWidth="200.0" promptText="Description (Notes)" wrapText="true" />
+    <TextField fx:id="locField" layoutX="140.0" layoutY="201.0" promptText="Location" />
+    <TextField fx:id="typeField" layoutX="140.0" layoutY="239.0" promptText="Type" />
+    <ComboBox fx:id="contactComboBox" layoutX="140.0" layoutY="279.0" prefWidth="150.0" promptText="Contact" />
+    <ComboBox fx:id="custComboBox" layoutX="140.0" layoutY="318.0" prefWidth="150.0" promptText="Customer" />
+    <DatePicker fx:id="datePicker" layoutX="407.0" layoutY="113.0" prefHeight="39.0" prefWidth="200.0" promptText="Select Date" />
+    <ComboBox fx:id="startComboBox" layoutX="407.0" layoutY="155.0" prefHeight="25.0" prefWidth="97.0" promptText="Start Time" />
+    <ComboBox fx:id="endComboBox" layoutX="510.0" layoutY="155.0" prefHeight="25.0" prefWidth="97.0" promptText="End Time" />
+    <Button fx:id="cancelButton" layoutX="545.0" layoutY="304.0" mnemonicParsing="false" onAction="#cancelButtonPressed" text="Cancel" />
+    <Button layoutX="489.0" layoutY="304.0" mnemonicParsing="false" onAction="#saveButtonPressed" text="Save" />
+    <Label layoutX="288.0" layoutY="14.0" text="Update Appointment">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Label layoutX="424.0" layoutY="181.0" text="Business hours are 8:00 - 22:00 EST">
+        <font>
+            <Font name="System Italic" size="12.0" />
+        </font>
+    </Label>
+    <Label layoutX="115.0" layoutY="46.0" text="ID" />
+    <Label layoutX="109.0" layoutY="81.0" text="Title" />
+    <Label layoutX="71.0" layoutY="113.0" text="Description" />
+    <Label layoutX="86.0" layoutY="201.0" text="Location" />
+    <Label layoutX="107.0" layoutY="239.0" text="Type" />
+</AnchorPane>

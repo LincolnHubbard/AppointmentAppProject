@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="419.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hubbard.appointmentapp.controller.AddAppointmentController">
+    <children>
+        <TextField disable="true" editable="false" layoutX="146.0" layoutY="38.0" promptText="ID Is Auto-Generated" />
+        <TextField fx:id="titleField" layoutX="146.0" layoutY="73.0" promptText="Title" />
+        <TextArea fx:id="descField" layoutX="146.0" layoutY="109.0" prefHeight="76.0" prefWidth="200.0" promptText="Description (Notes)" wrapText="true" />
+        <TextField fx:id="locField" layoutX="146.0" layoutY="197.0" promptText="Location" />
+        <TextField fx:id="typeField" layoutX="146.0" layoutY="235.0" promptText="Type" />
+        <ComboBox fx:id="contactComboBox" layoutX="146.0" layoutY="275.0" prefWidth="150.0" promptText="Contact" />
+        <ComboBox fx:id="custComboBox" layoutX="146.0" layoutY="314.0" prefWidth="150.0" promptText="Customer" />
+        <DatePicker fx:id="datePicker" layoutX="413.0" layoutY="109.0" prefHeight="39.0" prefWidth="200.0" promptText="Select Date" />
+        <ComboBox fx:id="startComboBox" layoutX="413.0" layoutY="151.0" prefHeight="25.0" prefWidth="97.0" promptText="Start Time" />
+        <ComboBox fx:id="endComboBox" layoutX="516.0" layoutY="151.0" prefHeight="25.0" prefWidth="97.0" promptText="End Time" />
+        <Button fx:id="cancelButton" layoutX="551.0" layoutY="300.0" mnemonicParsing="false" onAction="#cancelButtonPressed" text="Cancel" />
+        <Button layoutX="495.0" layoutY="300.0" mnemonicParsing="false" onAction="#saveButtonPressed" text="Save" />
+        <Label layoutX="295.0" layoutY="14.0" text="Add Appointment">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="430.0" layoutY="177.0" text="Business hours are 8:00 - 22:00 EST">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="120.0" layoutY="42.0" text="ID" />
+        <Label layoutX="115.0" layoutY="77.0" text="Title" />
+        <Label layoutX="77.0" layoutY="109.0" text="Description" />
+        <Label layoutX="92.0" layoutY="200.0" text="Location" />
+        <Label layoutX="113.0" layoutY="239.0" text="Type" />
+    </children>
+</AnchorPane>

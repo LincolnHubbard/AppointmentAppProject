@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hubbard.appointmentapp.controller.LoginController">
+    <children>
+        <Label fx:id="userLabel" contentDisplay="CENTER" layoutX="144.0" layoutY="118.0" text="Username" AnchorPane.rightAnchor="402.0" />
+        <Label fx:id="passLabel" layoutX="146.0" layoutY="192.0" text="Password" textAlignment="CENTER" AnchorPane.rightAnchor="404.0" />
+        <TextField fx:id="userField" layoutX="226.0" layoutY="114.0" />
+        <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="188.0" />
+        <Button fx:id="exitButton" layoutX="551.0" layoutY="357.0" onAction="#exitButtonPressed" text="Exit" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" />
+        <Button fx:id="loginButton" layoutX="241.0" layoutY="234.0" onAction="#loginPressed" prefHeight="50.0" prefWidth="119.0" text="Log-In">
+        </Button>
+        <Label fx:id="locationLabel" layoutX="20.0" layoutY="369.0" text="Location: " />
+        <Label fx:id="zoneField" layoutX="72.0" layoutY="369.0" text="America" />
+        <Label fx:id="loginLabel" layoutX="265.0" layoutY="14.0" text="Log-In Form" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

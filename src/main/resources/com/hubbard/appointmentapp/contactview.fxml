@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hubbard.appointmentapp.controller.ContactViewController">
+    <children>
+        <TableView fx:id="apptTableView" layoutX="32.0" layoutY="61.0" prefHeight="200.0" prefWidth="636.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="39.0" text="ID" />
+                <TableColumn fx:id="titleColumn" prefWidth="96.0" text="Title" />
+                <TableColumn fx:id="typeColumn" prefWidth="77.0" text="Type" />
+                <TableColumn fx:id="descColumn" prefWidth="113.0" text="Description" />
+                <TableColumn fx:id="startColumn" prefWidth="99.0" text="Start" />
+                <TableColumn fx:id="endColumn" prefWidth="116.0" text="End" />
+                <TableColumn fx:id="custIdColumn" prefWidth="95.0" text="Customer ID" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="contactComboBox" layoutX="27.0" layoutY="271.0" onAction="#contactSelection" prefWidth="150.0" promptText="Contact" />
+        <Label layoutX="301.0" layoutY="14.0" text="Contact Schedule">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Button fx:id="closeButton" layoutX="618.0" layoutY="271.0" mnemonicParsing="false" onAction="#closeButtonPressed" text="Close" />
+    </children>
+</AnchorPane>
