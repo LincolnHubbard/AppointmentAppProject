@@ -3,7 +3,6 @@ Version: 1.0.0.2
 Date: 2023-08-04
 Purpose: Allows users to add, update, and delete customers and appointments
 Author: Lincoln Hubbard
-Contact Info: lhubb94@wgu.edu
 Software versions:
     IntelliJ IDEA Community Edition 2023.1.4
     Oracle OpenJDK version 17.0.8
